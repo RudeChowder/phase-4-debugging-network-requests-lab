@@ -62,12 +62,12 @@ developing your own process.
 
 - Add a new toy when the toy form is submitted
 
-  - How I debugged:
+  - How we debugged: We checked the JS console and saw a server error. Checked the server logs and they pointed to the ToyController's `create` method. We noticed the class name was wrong and corrected it.
 
 - Update the number of likes for a toy
 
-  - How I debugged:
+  - How we debugged: We checked the JS console and saw a JSON.parse error. Looked at the Rails console which pointed the ToysController. We noticed that there was no response so we added one.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
-  - How I debugged:
+  - How we debugged: We looked at the JS console and saw a 404. The Rails concolse confirmed we were missing a DELETE route. We added the route and it worked! Yay!
